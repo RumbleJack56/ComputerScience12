@@ -8,10 +8,10 @@ while True:
     y=int(input(' Please input another number \n '))
 
     # Print addition result statement
-    print(' Your Numbers are "',x,' "and" ',y,' "and the sum is" ',(x+y),'"\n')
+    print(' Your Numbers are "',x,' " and " ',y,' "and the sum is" ',(x+y),'"\n', sep="")
 
     #Print subtraction result Statement
-    print(' Your Numbers are "',x,'" and "',y,'" and the difference is "',(x-y),'"\n')
+    print(' Your Numbers are "',x,'" and "',y,'" and the difference is "',(x-y),'"\n', sep="")
 
     #Print product result statement
-    print(' Your Numbers are "',x,'" and "',y,'" and the product is "',(x*y),'" \n')
+    print(' Your Numbers are "',x,'" and "',y,'" and the product is "',(x*y),'" \n', sep="")
