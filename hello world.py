@@ -1,7 +1,6 @@
 print("Hello World")
 num = 0
 while 1==1:
-    pass
     var = input('Enter 1 or 0 \n')
     num = int(var)
     5
