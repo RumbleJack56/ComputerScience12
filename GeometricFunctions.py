@@ -74,6 +74,9 @@ while True:
             c=int(input("Enter Side 3 of triangle: "))
             print("Perimeter of Triangle of sides",a,"cm,",b,"cm and",c,"cm is",(a + b + c))
 
+        else:
+            print("Your input was invalid.")
+
 
 ###############################################################################
     #Circle Specific
@@ -88,14 +91,17 @@ while True:
 
             print("Area of a Circle")
             r=int(input("Enter Radius of Circle: "))
-            print("area of Circle of Radius",r,"cm is",(pi() * r * r))
+            print("area of Circle of Radius",r,"cm is",(3.1415926535 * r * r))
 
         #Circumference of Circle
         elif((gfunc=='2')):
 
             print("Circumference of a Circle")
             r=int(input("Enter Radius of Circle: "))
-            print("Circumference of Circle of Radius",r,"cm is",(pi() * r * 2))
+            print("Circumference of Circle of Radius",r,"cm is",(3.1415926535 * r * 2))
+
+        else:
+            print("Your input was invalid.")
 
 ###############################################################################
 
@@ -128,7 +134,7 @@ while True:
             l=int(input("Enter length of Cuboid: "))
             b=int(input("Enter breadth of Cuboid: "))
             b=int(input("Enter height of Cuboid: "))
-            print("Surface Area of Cuboid of length",l,"cm, height",h,"cm and breadth",b,"cm is",(2(l*b + b*h + h*l)))
+            print("Surface Area of Cuboid of length",l,"cm, height",h,"cm and breadth",b,"cm is",(2*(l*b + b*h + h*l)))
 
         #Volume of Cuboid
         elif((gfunc=='2') and (shape=='6')):
@@ -146,13 +152,18 @@ while True:
 
             print("Surface Area of a Sphere")
             r=int(input("Enter Radius of Sphere: "))
-            print("Surface area of Sphere of Radius",r,"cm is",(4 * pi() * r * r))
+            print("Surface area of Sphere of Radius",r,"cm is",(4 * 3.1415926535 * r * r))
 
         #Volume of Sphere
         elif((gfunc=='2') and (shape=='7')):
 
             print("Volume of a Sphere")
             r=int(input("Enter Radius of Sphere: "))
-            print("Volume of Sphere of Radius",r,"cm is",(4 / 3 * pi() * r * r * r))
+            print("Volume of Sphere of Radius",r,"cm is",(4 / 3 * 3.1415926535 * r * r * r))
 
+        else:
+            print("Your input was invalid.")
+
+    else:
+        print("Your input was invalid.")
     break
