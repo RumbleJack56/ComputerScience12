@@ -105,7 +105,7 @@ while True:
 
 ###############################################################################
 
-    elif ((shape=='5') and (shape=='6') and (shape=='7')):
+    elif ((shape=='5') or (shape=='6') or (shape=='7')):
         print("What d you want to find? (select the correspinding number)")
         print("\t1) Surface Area\n\t2) Volume")
 
@@ -133,7 +133,7 @@ while True:
             print("Surface Area of a Cuboid")
             l=int(input("Enter length of Cuboid: "))
             b=int(input("Enter breadth of Cuboid: "))
-            b=int(input("Enter height of Cuboid: "))
+            h=int(input("Enter height of Cuboid: "))
             print("Surface Area of Cuboid of length",l,"cm, height",h,"cm and breadth",b,"cm is",(2*(l*b + b*h + h*l)))
 
         #Volume of Cuboid
