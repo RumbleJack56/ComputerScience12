@@ -34,7 +34,7 @@ if (shapeSelect=='1'):
     len=input("Enter Length: ")
     bre=input("Enter Breadth: ")
     print("Perimeter of rectangle of Length",len,"cm and breadth",bre,"cm is",periRect(len,bre),"cm.")
-
+    
 #shape 2 is Square
 elif (shapeSelect=='2'):
     print("You have chosen Square")
