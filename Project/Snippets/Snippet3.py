@@ -5,3 +5,5 @@ p+=p+q+r         #1 + 1 + 1+1 =4
 r+=p+q+r         #1 + 4 + 1+ 1 = 7
 q-=p+q*r         #1 - 4 - 7 = -10
 print(p,q,r)
+
+#Vartika is Great
