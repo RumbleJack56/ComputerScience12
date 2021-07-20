@@ -1,21 +1,10 @@
 def Hi(name="Human"):
     print("Hello,",name,"I am Python interpreter")
 
-a=5
-print("a =",a)
-input()
-
-b=2 * a
-print("b =",b)
-input()
-
-a+=a+b
-print("a =",a)
-input()
-
-b*=a+b
-print("b =",b)
-input()
-
-
-print(a,b)
+p=5%2            #1
+q=p**4           #1
+r=p//q           #1
+p+=p+q+r         #1 + 1 + 1+1 =4
+r+=p+q+r         #1 + 4 + 1+ 1 = 7
+q-=p+q*r         #1 - 4 - 7 = -10
+print(p,q,r)
