@@ -1,6 +1,3 @@
-def Hi(name="Human"):
-    print("Hello,",name,"I am Python interpreter")
-
 p=5%2            #1
 q=p**4           #1
 r=p//q           #1
