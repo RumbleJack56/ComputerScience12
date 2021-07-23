@@ -22,4 +22,4 @@ def convertDollar(amount_in_dollar , dollar_to_rupee):
     return amount_in_rupee
 
 x = convertDollar(int(input("Enter Amount in Dollars: ")),int(input("Enter Dollar to rupee convertion rate: ")))
-print("Value in rupee is",x)
+print("Value in rupee is",x)    
