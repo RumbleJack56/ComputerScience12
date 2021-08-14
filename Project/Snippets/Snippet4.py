@@ -1,1 +1,1 @@
-print(int(input("Enter Binary: "),2))
+#Snippet4
