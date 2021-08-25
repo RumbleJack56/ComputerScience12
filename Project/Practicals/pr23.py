@@ -4,14 +4,8 @@ for j in n:
     if(j==" "):
         wrds+=1
 print("Word Count:",wrds,end="\n")
-subs= input("Enter substring: ")
-subsAppear, iter = 0 , (len(n)-len(subs)+1)
-for count in range(0,iter):
-    j=0
-    for num in range(count,count+len(subs)):
-        if(n[num]!=subs[j]):
-            j+=1
-            break
-    else:
-        subsAppear+=1
-print("The number of times the substring appears is",subsAppear)
+subs , count = input("Enter substring: ") , 0
+for j in range(len(n)-len(subs)+1):
+    if subs == n[j:(j+len(subs))]:
+        count += 1
+print("The number of times the substring appears is",count)

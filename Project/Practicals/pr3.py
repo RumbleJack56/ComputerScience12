@@ -17,5 +17,5 @@ for sub in subjects:
         elif (marks[iter]>=40):
             print("E")
     else:
-        print("Your are fail in",sub)
+        print("\nYour are fail in",sub)
     iter+=1

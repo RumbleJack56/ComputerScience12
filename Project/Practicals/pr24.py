@@ -1,12 +1,11 @@
 print("Title Case")
-A= input("Enter String: ")
-# print(a.title())   #Efficient way using prebuilt functions
-a = []
-for iter in range(0,len(A)):   #convert string to mutable list
-    a.append(A[iter])
-a[0] = a[0].upper()            #Exception handling for first term
-for j in range(0,len(A)):      #Uppercase after each Spacebar
-    if(a[j]==" "):
-        a[j+1] = a[j+1].upper()
-    print(a[j],end="")
-print('')
+A , state= input("Enter String: "), 0
+print(A[0].upper(),end="")
+for char in A[1:(len(A)-1)]:
+    if state==1:
+        char = char.upper()
+        state=0
+    if char==" ":
+        state=1
+    print(char,end="")
+print(A[len(A)-1])

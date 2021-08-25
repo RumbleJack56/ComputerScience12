@@ -1,7 +1,7 @@
 print("Factorials")
 Fac , n = 1 , int(input("Enter Positive Number: "))
 if(n<0):
-    "Invalid Input"
+    print("Invalid Input")
 elif (n==0):
     print("Factorial of 0 is 1")
 elif(n>0):

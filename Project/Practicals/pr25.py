@@ -3,8 +3,8 @@ Sen , ts=input("Enter a few Lines: \n") , []
 for j in range(0,len(Sen)):
     ts.append(Sen[j])
 for num in range(0,len(Sen)):
-    a=ts[num]
-    if(a=="a" or a=="A" or a=="e" or a=="E" or a=="i" or a=="I" or a=="o" or a=="O" or a=="u" or a=="U"):
+    a=ts[num].lower
+    if(a=="a" or a=="e" or a=="i" or a=="o" or a=="u"):
         ts[num] = ""
     else:
         ts[num] = ts[num].upper()
