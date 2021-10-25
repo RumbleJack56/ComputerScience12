@@ -1,4 +1,4 @@
-a = "h ;4 t akos"
+a = "H ;4 t akos"
 out = ''
 for j in a:
     if j.isspace():
