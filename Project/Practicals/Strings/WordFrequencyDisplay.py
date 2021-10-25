@@ -1,17 +1,15 @@
-# inp = input("Enter String: ")
-# list1 = inp.split()
-# list2 = []
-# for item in list1:
-#     if item not in list2:
-#         a.append(j)
-# for it1 in list2:
-#     count=0
-#     for it2 in list1:
-#         if it1 == it2:
-#             count+=1
-#     print("Occurence of '",it1,"' is",count)
-
-
+inp = input("Enter String: ")
+list1 = inp.split()
+list2 = []
+for item in list1:
+    if item not in list2:
+        list2.append(item)
+for it1 in list2:
+    count=0
+    for it2 in list1:
+        if it1 == it2:
+            count+=1
+    print("Occurence of '",it1,"' is",count)
 
 
 
@@ -23,6 +21,9 @@
 
 # list1 , list2= input("Enter String: ").split() , []
 # [list2.append(item) for item in list1 if item not in list2]
+# for item in list:
+#     if item not in list2:
+#         list2.append(item)
 # for item1 in list2:
 #     count= []
 #     count = len([count.append('') for item2 in list1 if item1==item2])
