@@ -21,9 +21,9 @@ def pathExist(m):
             print('Solvable')
             for j in range(len(m)): #Route Recreate
                 for a in range(len(m[j])):
-                    if m[j][a] == 1:
-                        m[j][a] = 0
-                    if m[j][a] >= 2:
+                    if m[j][a] == 1 or m[j][a] == 0:
+                        m[j][a] = ' '
+                    if m[j][a]!=' ' and m[j][a] >= 2:
                         m[j][a] = 'S'
                 m[0][0] = 'S'
             for j in range(columns): #Prints solution Maze
@@ -42,7 +42,7 @@ def pathExist(m):
                         m[j][a] = 0
                     if m[j][a] >= 2 and m[j][a]<c:
                         m[j][a] = 1
-            x , y , c = 0 , 0 ,2
+            x , y , c = 0 , 0 , 2
         else: #Move across the paths in a preferential order
             if pDown == 1:
                 y+=1
