@@ -1,4 +1,6 @@
 from tkinter import *
+from turtle import width
+from sympy import solve
 from doku import *
 
 #Root main window and main sudoku variable
@@ -8,10 +10,12 @@ root = Tk()
 
 #attributes of root window
 root.title("Sudoku Solver")
-root.geometry('725x725')
+root.geometry('725x700')
 root.resizable(False , False)
 root.configure(bg="Yellow")
-
+root.lift()
+root.attributes('-topmost',True)
+root.after_idle(root.attributes,'-topmost',False)
 
 #3 chilren of root window
 TitleFrame = Frame(root)
@@ -36,7 +40,17 @@ def EditStringVar(a,i,j,val):
 
 #Function for converting vival to board
 def convertBoard():
-    print()
+    takenBoard = [[int(vival[i][j].get()) 
+    if vival[i][j].get().isnumeric() 
+    else vival[i][j].get() 
+    for j in range(1,10)] 
+    for i in range(1,10)]
+
+    solveBoard(takenBoard)
+    print(takenBoard)
+    for i in range(9):
+        for j in range(9):
+            vival[i+1][j+1].set(takenBoard[i][j])
     
 
 
@@ -44,7 +58,7 @@ def convertBoard():
 def MakeSudoku(a):
     for i in range(10):
         for j in range(10):
-            tkinterSudoku[i][j] = Label(MainFrame, width=9, height=3, bg="white",textvariable=a[i][j],padx=1,pady=1).grid(row=i,column=j,padx=1,pady=1)
+            tkinterSudoku[i][j] = Label(MainFrame, width=4, height=1, bg="white",textvariable=a[i][j],padx=1,pady=1,font=("Comic Sans MS",18)).grid(row=i,column=j,padx=1,pady=2)
 
 
 def buttonCommand():
@@ -77,19 +91,27 @@ option3=StringVar(root,value="1")
 
 
 #Creating Option Menu
-Opt1 = OptionMenu(BottomFrame,option1,*one2nine).pack(side=LEFT,padx=40,pady=35)
-Opt2 = OptionMenu(BottomFrame,option2,*a2i     ).pack(side=LEFT,padx=40,pady=35)
-Opt3 = OptionMenu(BottomFrame,option3,*one2nine).pack(side=LEFT,padx=40,pady=35)
-
+Opt1 = OptionMenu(BottomFrame,option1,*one2nine)
+Opt2 = OptionMenu(BottomFrame,option2,*a2i     )
+Opt3 = OptionMenu(BottomFrame,option3,*one2nine)
+Opt1.config(width=3,height=2,bg='light blue',font=("Algerian",18))
+Opt2.config(width=3,height=2,bg='light blue',font=("Algerian",18))
+Opt3.config(width=3,height=2,bg='light blue',font=("Algerian",18))
 
 #Creates button
 OptButton = Button(BottomFrame, width=10,height=2,text="Put Value",
-            command=buttonCommand)
+            command=buttonCommand,font=("Algerian",18))
+
+
+
+Opt1.pack(expand=True,side=LEFT,padx=40,pady=35)
+Opt2.pack(expand=True,side=LEFT,padx=40,pady=35)
+Opt3.pack(expand=True,side=LEFT,padx=40,pady=35)            
 OptButton.pack(side=LEFT)
 
 #Makes root's grid
 TitleFrame.grid(row=0 , column=0)
-MainFrame.grid(row=1 , column=0)
+MainFrame.grid(row=1 , column=0,pady=20)
 BottomFrame.grid(row=2 , column=0)
 
 
