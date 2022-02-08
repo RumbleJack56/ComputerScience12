@@ -1,7 +1,7 @@
 ###########################################################
 #                      SUDOKU SOLVER                      #
 ###########################################################
- 
+
 import sys
 from doku import *
 try:
@@ -10,9 +10,9 @@ except:
     print("Rich library not installed, Please install rich and then open")
     sys.exit()
 from rich import print
-
-print(
-"""[blue]###########################################################
+from rich.console import Console
+Console()
+print("""[blue]###########################################################
 #[/blue]                      [bold red]SUDOKU SOLVER[/ bold red]                      [blue]#
 ###########################################################[/blue]""",end="\n\n")
 
@@ -24,7 +24,7 @@ print("[blue]This project has been developed in two formats, one with GUI and an
 while True:
     global progType
     progType = input("Enter value[1 or 2]: ")
-    if progType=='1' or progType=='2': 
+    if progType=='1' or progType=='2':
         break
     print("[red]Invalid Input, Try Again[/red]")
 if progType=='1':

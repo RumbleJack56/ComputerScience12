@@ -12,7 +12,7 @@ myBoard = [[' ' for _ in range(9)] for __ in range(9)]
 
 
 def enterInput(board):
-    
+
     print("""  Enter your values in following format:
      [blue]x y v[/blue]
      [red]x[/red] is the x coordinate from left
@@ -82,6 +82,4 @@ def solveBoard(board):
 def printBoard(board):
     for line in board:
         print(line)
-
-
-
+    input()

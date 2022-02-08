@@ -1,8 +1,6 @@
 from tkinter import *
-from turtle import width
-from sympy import solve
 from doku import *
-
+from time import sleep
 #Root main window and main sudoku variable
 tkinterSudoku = [[0 for _ in range(10)] for __ in range(10)]
 root = Tk()
@@ -40,10 +38,10 @@ def EditStringVar(a,i,j,val):
 
 #Function for converting vival to board
 def convertBoard():
-    takenBoard = [[int(vival[i][j].get()) 
-    if vival[i][j].get().isnumeric() 
-    else vival[i][j].get() 
-    for j in range(1,10)] 
+    takenBoard = [[int(vival[i][j].get())
+    if vival[i][j].get().isnumeric()
+    else vival[i][j].get()
+    for j in range(1,10)]
     for i in range(1,10)]
 
     solveBoard(takenBoard)
@@ -51,7 +49,8 @@ def convertBoard():
     for i in range(9):
         for j in range(9):
             vival[i+1][j+1].set(takenBoard[i][j])
-    
+            root.update()
+            sleep(0.013)
 
 
 #Create the sudoku itself by making labels and assigning String Variable
@@ -106,7 +105,7 @@ OptButton = Button(BottomFrame, width=10,height=2,text="Put Value",
 
 Opt1.pack(expand=True,side=LEFT,padx=40,pady=35)
 Opt2.pack(expand=True,side=LEFT,padx=40,pady=35)
-Opt3.pack(expand=True,side=LEFT,padx=40,pady=35)            
+Opt3.pack(expand=True,side=LEFT,padx=40,pady=35)
 OptButton.pack(side=LEFT)
 
 #Makes root's grid
