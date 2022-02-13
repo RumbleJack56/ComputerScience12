@@ -27,4 +27,4 @@ print(renameKey3({1:'a', 2:'b' , 3:'c'} , 2 , 6))
 
 
 
-print("LOL")
+# print("LOL")
