@@ -45,3 +45,9 @@ print(newL)
 lis , newL = eval(input("Enter List: ")) , []
 [newL.append(x) for x in lis if x not in newL]
 print(newL)
+
+
+
+#key corresponding to min val
+minKey  = lambda dicG : [x for x in dicG.keys() if dicG[x]==sorted(dicG.values())[0]]
+print(minKey(eval(input("Enter Dictionary: "))))

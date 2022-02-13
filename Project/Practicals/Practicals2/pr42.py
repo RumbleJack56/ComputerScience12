@@ -1,0 +1,6 @@
+tup = eval(input("Enter values in parenthesis (seperated by commas): "))
+print("The given Tuple is ", tup)
+print("The maximum value is", max(tup))
+print("The minimum value is", min(tup))
+print("The sum is",sum(tup))
+print("The mean is",round(sum(tup)/len(tup),3))
