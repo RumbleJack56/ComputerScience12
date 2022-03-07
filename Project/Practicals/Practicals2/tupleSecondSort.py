@@ -9,4 +9,3 @@ for x in range(len(tup)):
         if tup[x][1] > tup[y][1]:
             tup[x] , tup[y] = tup[y] , tup[x]
 print(tuple(tup))
-

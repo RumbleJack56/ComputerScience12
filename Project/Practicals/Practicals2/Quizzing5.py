@@ -11,7 +11,7 @@ correct = 0
 for x in range(len(Q)):
     ans = input("Q"+str(x+1)+") "+Q[x])
     if ans.upper() == QA[Q[x]]:
-        print("Correct , Now next Question") 
+        print("Correct , Now next Question")
         correct+=1
     else:
         print("Oh, Wrong, Lets Try Again")
