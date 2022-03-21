@@ -1,0 +1,3 @@
+Prepared for term 2 practicals
+
+We can both add files here and commit
