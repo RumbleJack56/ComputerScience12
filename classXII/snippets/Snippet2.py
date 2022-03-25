@@ -1,7 +1,10 @@
 class Dog:
     species = "Canis Familiaris"
     alive = True
+<<<<<<< HEAD
     
+=======
+>>>>>>> 046c023529902387ef0ad64a5c517fb6729e9651
     def __init__(self, breed, age, hair):
         self.breed , self.age , self.hair = breed , age , hair
     def birthday(self):
