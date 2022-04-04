@@ -6,7 +6,7 @@ class Teacher:
         self.age = age
         self.designation = designation
 
-rajni = Teacher("science",33,"TGT")
+rajni = Teacher("science",33,"idiot")
 shyamal = Teacher("Maths", 912, "Voldemort")
 gurjeet_maam = Teacher("CS" , 34 , "PGT")
 
@@ -16,3 +16,4 @@ for x in dir():
         print("Teacher is",x,"who is a",y.subject,"teacher and is aged",y.age,".",
         
         "Their designation is",y.designation,".")
+
