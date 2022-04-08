@@ -7,3 +7,7 @@ b=int(input("Enter a number: "))
 c=int(input("Enter a number: "))
 d=int(input("Enter a number: "))
 avg(a,b,c,d)
+
+
+class average:
+    
