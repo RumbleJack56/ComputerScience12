@@ -13,10 +13,9 @@ count=countvowel(sin)
 print('Total number of vowels in the string are: ',count)
 
 
-
 #Method 2:
 def vowelcount(st): return len(['' for k in st if st.lower() in "aeiou"])
-cos=input('Enter a string: ')
-dooku=countvowel(cos)
-print('Total number of vowels in the string are: ',dooku)
+a=input('Enter a string: ')
+d=countvowel(a)
+print('Total number of vowels in the string are: ',d)
 
