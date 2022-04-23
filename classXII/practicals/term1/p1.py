@@ -1,3 +1,5 @@
+#
+
 def avg(n1,n2,n3,n4):
     av=(n1+n2+n3+n4)/4
     print(av)
