@@ -9,9 +9,6 @@ def conNum(x):
         return float(x)
 
 
-
-
-
 print("Welcome to Simple Calculator, + adds , - subtracts , x multiplies , / divides , ^ exponents")
 cv = conNum(input("Enter number: "))
 while True:

@@ -1,5 +1,6 @@
 # 23/3/22
 
+#Method 1:
 def avg(n1,n2,n3,n4):
     av=(n1+n2+n3+n4)/4
     print(av)
@@ -10,6 +11,7 @@ c=int(input("Enter a number: "))
 d=int(input("Enter a number: "))
 avg(a,b,c,d)
 
+#Method 2:
 def avg2(n1,n2,n3,n4):
     s=0
     l=4
