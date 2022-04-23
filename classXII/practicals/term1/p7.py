@@ -1,3 +1,5 @@
+#8/4/22
+
 from random import random
 n=(random()*900+100)//1
 print('The number is: ',n)

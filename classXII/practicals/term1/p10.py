@@ -1,4 +1,4 @@
-#21/4/22
+#19/4/22
 
 from random import uniform
 print("Lottery number is between 1-100")

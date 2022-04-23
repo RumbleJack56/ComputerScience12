@@ -1,4 +1,4 @@
-#19/4/22
+#8/4/22
 
 import random
 subj = ["Computer Science", "IP", "Physics", "Maths"]

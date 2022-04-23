@@ -1,4 +1,4 @@
-#21/4/22
+#11/4/22
 
 from random import randint
 def fill_list(L , num , min , max):

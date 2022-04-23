@@ -1,3 +1,5 @@
+#23/3/22
+
 def cube(n):
     a=n*n*n
     return a
