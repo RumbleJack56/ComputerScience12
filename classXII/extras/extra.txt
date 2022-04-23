@@ -1,3 +1,0 @@
-This folder works with all extra files which are not a part of project or practicals
-
-May Have Subfolders
