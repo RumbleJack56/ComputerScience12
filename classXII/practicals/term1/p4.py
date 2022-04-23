@@ -1,12 +1,16 @@
 from math import *
 
 def conNum(x):
-    if float(x) == int(x): 
-        return eval(x)
-    elif float(x) != int(x): 
+    if float(x) == round(float(x)): 
+        return round(float(x))
+    elif float(x) != round(x): 
         return float(x)
 
-print("Welcome to Calculator, + adds , - subtracts , x multiplies , / divides , ^ exponents")
+
+
+
+
+print("Welcome to Simple Calculator, + adds , - subtracts , x multiplies , / divides , ^ exponents")
 cv = conNum(input("Enter number: "))
 while True:
     fun = input("Enter operation: ")

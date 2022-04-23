@@ -10,3 +10,4 @@ fill_list(b,elem,low,up)
 fill_list(a , min=420 , max=4200 , num=69)
 print(b)
 print(a)
+#yaha kardena
