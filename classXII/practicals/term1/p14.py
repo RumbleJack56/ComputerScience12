@@ -1,6 +1,6 @@
 #22/4/22
 
-#higher lower game
+#Higher lower game
 
 import random
 

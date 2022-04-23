@@ -1,4 +1,6 @@
 #22/4/22
+
+#Method 1:
 def countvowel(s):
     c=0
     for ch in s:
@@ -12,7 +14,7 @@ print('Total number of vowels in the string are: ',count)
 
 
 
-#alternate method using list comprehension
+#Method 2:
 def vowelcount(st): return len(['' for k in st if st.lower() in "aeiou"])
 cos=input('Enter a string: ')
 dooku=countvowel(cos)

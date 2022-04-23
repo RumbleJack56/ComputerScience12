@@ -1,4 +1,5 @@
 #22/4/22
+
 def countOddEven(t):
     odd = len(['' for k in t if k%2==1])
     return odd , len(t) - odd
