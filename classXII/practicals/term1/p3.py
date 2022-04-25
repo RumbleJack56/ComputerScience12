@@ -10,10 +10,10 @@ r=float(input("Enter the radius: "))
 print("The area is: ",ar(r))
 
 #Method 2:
-def ar2(rad):
-    return pi*(rad**2)
-print(ar2(float(input("Enter Radius: "))))
+def ar2(rad2):
+    return pi*(rad2**2)
+print("The area is: ",ar2(float(input("Enter Radius: "))))
 
 #Method 3:
-ar3 = lambda rad : pi*(r**3)
-print(ar3(float(input("Enter Radius: "))))
+ar3 = lambda rad3 : pi*(rad3**2)
+print("The area is: ",ar3(float(input("Enter Radius: "))))

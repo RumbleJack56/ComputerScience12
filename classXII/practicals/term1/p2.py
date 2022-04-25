@@ -8,7 +8,7 @@ num=float(input("Enter a number: "))
 print(cube(num))
 
 #Method 2:
-def cube2(n): return n**3=
+def cube2(n): return n**3
 num2 = float(input("Enter a Number: "))
 print(cube2(num2))
 
