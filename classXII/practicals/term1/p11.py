@@ -8,3 +8,4 @@ print("Randomly selected cardinal direction is",direction)
 def d():
     dir = random.choice(["East", "West", "North","South"])
     return dir
+print("Random non cardinal Direction is",d()+"-"+d())

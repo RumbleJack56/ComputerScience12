@@ -7,7 +7,8 @@ low , up , elem = int(input("Enter Minimum: ")) , int(input("Enter Maximum: ")) 
 a = []
 b = []
 fill_list(b,elem,low,up)
-fill_list(a , min=420 , max=4200 , num=69)
+print("\n Another set Min:69, Max:420, Total:13")
+fill_list(a , min=69 , max=420 , num=13)
 print(b)
 print(a)
 

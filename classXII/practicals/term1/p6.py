@@ -2,7 +2,8 @@
 
 import random
 subj = ["Computer Science", "IP", "Physics", "Maths"]
-
+print("The subjects are", subj)
+print("Output will be one of these")
 #Method 1:
 print(random.choice(subj))
 
