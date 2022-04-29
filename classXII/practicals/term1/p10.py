@@ -9,3 +9,7 @@ print("Random Lottery number is",a)
 print("Lottery is won by ticket containing numbers: ")
 a = lambda : uniform(1,100)//0.01 /100
 print(a(),",",a(),"and",a())
+
+
+
+#DONE
