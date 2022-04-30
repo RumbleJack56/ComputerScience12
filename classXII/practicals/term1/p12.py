@@ -5,4 +5,4 @@ import random
 f=['Apple','Mango','Orange','Banana','Avacado']
 print('Original list: ',f)
 random.shuffle(f)
-print('Reshuffled list: ',f)
+print('Reshuffled list: ',f)    

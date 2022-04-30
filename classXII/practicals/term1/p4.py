@@ -86,7 +86,7 @@ def SAcalc():
     if shapeType.lower() == "hemisphere":
         print("The Surface Area of Hemisphere is",
         3*pi*conNum(input("Enter radius: "))**2)
-    if shapeType.lower() == "Frustrum":
+    if shapeType.lower() == "frustrum":
         print("The Surface Area of Frustrum is  ",
         (conNum(input("Enter radius 1: ")) + conNum(input("Enter radius 2: "))) * pi * (conNum(input("Enter height: ")) + 2) )
 
