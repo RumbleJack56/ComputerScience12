@@ -10,7 +10,7 @@ while True:
     
     print("Higher or lower\n")
     new = round(100000 * random.random())
-    input()
+    input() 
     if new>initial:
         print('its higher')
 
