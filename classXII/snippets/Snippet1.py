@@ -1,6 +1,16 @@
-name = "Madam"
-print(name.replace('m','nna').upper())
-print(name.upper().replace("M",'NNA'))
+def mpd(l):
+    for i in range(len(l)):
+        for j in range(len(l[i])):
+            if i==j:
+                print(l[i][j],end='\t')
+            else:
+                print('',end='\t')
+        print()
 
-name="Vikram"
-print(name.replace('im','nt').upper()) 
+m=[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+mpd(m)
