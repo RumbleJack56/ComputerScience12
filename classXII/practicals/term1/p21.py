@@ -1,3 +1,5 @@
+#4/6/22
+
 name = "Madam"
 print(name.replace('m','nna').upper())
 print(name.upper().replace("M",'NNA'))

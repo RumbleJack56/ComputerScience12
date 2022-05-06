@@ -1,3 +1,5 @@
+#4/6/22
+
 import math, random
 def dist():
     return str(random.randrange(1,15)*50)
