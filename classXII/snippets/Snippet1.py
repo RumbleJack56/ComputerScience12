@@ -1,4 +1,4 @@
-def mpd(l):
+def MatrixPrintDiagonal(l):
     for i in range(len(l)):
         for j in range(len(l[i])):
             if i==j:
@@ -13,4 +13,4 @@ m=[
     [7,8,9]
 ]
 
-mpd(m)
+MatrixPrintDiagonal(m)
