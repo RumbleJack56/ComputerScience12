@@ -1,6 +1,5 @@
 #6/5/22
 
-#Method 1:
 def OEcount(mytuple):
     even = len(["" for k in mytuple if k%2==0])
     odd = len(mytuple) - even
