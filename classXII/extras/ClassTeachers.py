@@ -22,7 +22,7 @@ class Teacher:
 
 
 
-rajni = Teacher("science",420,"idiot")
+rajni = Teacher("science",420,"hag")
 shyamal = Teacher("Maths", 912, "Voldemort")
 gurjeet_maam = Teacher("CS" , 34 , "PGT")
 
