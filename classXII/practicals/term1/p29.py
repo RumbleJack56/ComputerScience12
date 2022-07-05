@@ -22,5 +22,3 @@ a = [line[:-1] for line in myfile1]
 print(a)
 myfile1.close()
 
-
-
