@@ -8,6 +8,7 @@ ar = open("Datafiles.txt", 'r')
 for str in ar:
     print(str,end="")
 
-aw = open("DataFiles.txt", "w")
+aw = open("DataFiles.txt", "r+")
+[print()]
 aw.writelines([k+'\n' for k in ("hi","hello","Vartika","<3")])
 aw.close()
