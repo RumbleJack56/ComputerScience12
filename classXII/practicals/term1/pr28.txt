@@ -1,0 +1,3 @@
+Hye!
+This is my first program in file handling.
+I am practicing to make a project for the midterm project. 
