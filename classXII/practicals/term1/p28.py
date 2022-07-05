@@ -2,7 +2,7 @@
 
 import sd
 
-myfile=open('pr28.txt','r')
+myfile=open('p28.txt','r')
 str1=' '
 size=0
 tsize=0
