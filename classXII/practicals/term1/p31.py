@@ -1,3 +1,5 @@
+6/6/22
+
 import sd
 
 myfile = open("p31.txt" , 'r+')
