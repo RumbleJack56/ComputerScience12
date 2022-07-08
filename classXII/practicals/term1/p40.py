@@ -4,4 +4,4 @@ import sd
 from pickle import *
 
 with open('p39.txt', 'r+b') as f:
-    
+    pass
