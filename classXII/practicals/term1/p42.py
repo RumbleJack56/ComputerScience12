@@ -1,4 +1,5 @@
-#12-07-22
+#12/7/22
+
 import sd, pickle
 with open("p42a.txt" , "r+b") as f1:
     with open("p42b.txt" , 'r+b') as f2:
