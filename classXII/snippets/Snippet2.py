@@ -1,14 +1,8 @@
-import manage
+def rev(a):
+    revword = ""
+    for k in a:
+        revword = k + revword
+    return revword
 
-ar = open("Datafiles.txt", 'r')
-for z in ar.readlines():
-    print(z[:-1])
-
-ar = open("Datafiles.txt", 'r')
-for str in ar:
-    print(str,end="")
-
-aw = open("DataFiles.txt", "r+")
-[print()]
-aw.writelines([k+'\n' for k in ("hi","hello","Vartika","<3")])
-aw.close()
+c = "asodjqwowidhqwi"
+print(rev(c))
