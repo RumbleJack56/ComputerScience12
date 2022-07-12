@@ -1,8 +1,8 @@
-def rev(a):
-    revword = ""
-    for k in a:
-        revword = k + revword
-    return revword
+def rev(k):
+    string = ""
+    for j in k:
+        string = j + string
+    return string
 
-c = "asodjqwowidhqwi"
+c = "ace race"
 print(rev(c))
