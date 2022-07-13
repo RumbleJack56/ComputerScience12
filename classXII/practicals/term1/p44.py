@@ -1,20 +1,8 @@
 #12/7/22
-
+#to and the counter
 import sd 
+with open("p44a.txt", 'r+') as f1:
+    data = [k.rstrip("\n") for k in f1.readlines()]
+    ans = len(["" for k in data for word in k.split() if word.lower() in ("the","to")])
+    print(ans)
 
-f1 = open("p44a.txt", 'w')
-
-s=''
-c=0
-while s:
-    s=f1.readline()
-    s1=s.split(' ')
-
-    for i in s1:
-        i=i.lower()
-        if i=='to' or 
-
-print(c1)
-print(c2)
-
-f1.close()
