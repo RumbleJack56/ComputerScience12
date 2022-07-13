@@ -1,5 +1,6 @@
 #12/7/22
 
+#CHOOSE a
 import sd 
 
 f1 = open("p43a.txt", 'r')
