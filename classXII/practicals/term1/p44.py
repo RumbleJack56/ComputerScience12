@@ -1,4 +1,4 @@
-#12/7/22
+#13/7/22
 
 import sd 
 
@@ -12,7 +12,7 @@ while s:
 
     for i in s1:
         i=i.lower()
-        if i=='to' or 
+        if i=='to' 
 
 print(c1)
 print(c2)
