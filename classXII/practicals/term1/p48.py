@@ -5,7 +5,7 @@ class student:
     def assignrno(self,cls, sec, col):
 
 
-    def __init__(self,):
+    def __init__(self):
         
 class Collection:
     def __init__(self,dirpath):
@@ -34,7 +34,7 @@ class Collection:
         with open(self.dirpath,'wb') as f1:
             dump(self.data,f1)
         self.filerefresh()
-
+    def remove(self,name)
 
 students = Collection('p48.txt')
 
