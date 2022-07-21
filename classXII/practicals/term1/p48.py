@@ -1,11 +1,11 @@
 import sd
 from pickle import *
 
-class student:
-    def assignrno(self,cls, sec, col):
+# class student:
+#     def assignrno(self,cls, sec, col):
 
 
-    def __init__(self,):
+#     def __init__(self,):
         
 class Collection:
     def __init__(self,dirpath):
@@ -38,6 +38,6 @@ class Collection:
 
 students = Collection('p48.txt')
 
-students.add('Ujjwal')
+students.add('lol')
 print(students.data)
         
