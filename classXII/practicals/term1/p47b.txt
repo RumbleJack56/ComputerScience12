@@ -1,0 +1,6 @@
+This is a line begining from capital.
+this doesnt begin from capital.
+neither does this. We are trying to capitalise sentences.
+nor this on.
+But this one does.
+ps, they all have full stops in end.

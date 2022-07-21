@@ -5,7 +5,6 @@
 
 
 #import of libraries
-from codecs import utf_16_decode, utf_16_encode
 import sd,pickle
 
 #defining required classes
@@ -54,7 +53,7 @@ def updateRecords(data, fname):
 #working Output Formats
 def dataFormat(data):
     #formats data to present in console
-    return ["%-15s|%5s|%5s|%-2s"%tuple([x[1:] for x in dir(k)]) for k in data]
+    return ["%-15s|%9s|%5s|%-2s"%tuple([x[1:] for x in dir(k)]) for k in data]
 
 
 #defining useful global variables
