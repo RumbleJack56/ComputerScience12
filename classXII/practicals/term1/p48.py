@@ -2,11 +2,12 @@ import sd
 from pickle import *
 
 class student:
-    def assignrno(self,cls, sec, col):
+    def __init__(self, name, cls, per , admno):
+        self.name = name
+        self.cls = cls
+        self.per = per
+        self.admno = admno
 
-
-    def __init__(self):
-        
 class Collection:
     def __init__(self,dirpath):
         self.dirpath = dirpath
@@ -22,7 +23,6 @@ class Collection:
         with open(dirpath,"rb") as f1:
             self.data = load(f1)
             self.totalnum = len(self.data)
-            print(self.data)
 
     def filerefresh(self):
         with open(self.dirpath,"rb") as f1:
@@ -34,10 +34,36 @@ class Collection:
         with open(self.dirpath,'wb') as f1:
             dump(self.data,f1)
         self.filerefresh()
-    def remove(self,name)
+
+    def remove(self,name = "", admno = ""):
+        if name == "" and admno=="":
+            return False
+        elif name == "":
+            for k in self.data:
+                if k.amdno == admno:
+                    self.data.remove(k)
+        else:
+            for k in self.data:
+                if k.name == name:
+                    self.data.remove(k)
+        with open(self.dirpath,'wb') as f1:
+            dump(self.data,f1)
+    def edit(self, admno):
+        if admno in [k.admno for k in self.data]:
+            
+        else
+
+
+                
+
+
 
 students = Collection('p48.txt')
 
-students.add('Ujjwal')
+
+
+
+
+students.add(student("Ujjwal",12,99.999,1))
 print(students.data)
-        
+students.remove(rno=1)
