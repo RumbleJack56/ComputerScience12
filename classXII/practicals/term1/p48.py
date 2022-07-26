@@ -1,18 +1,6 @@
 import sd
 from pickle import *
 
-<<<<<<< HEAD
-# class student:
-#     def assignrno(self,cls, sec, col):
-
-
-<<<<<<< HEAD
-#     def __init__(self,):
-=======
-    def __init__(self):
->>>>>>> 166080a2bc6a89198e6ce26a1dbb69de0e91f650
-        
-=======
 class student:
     def __init__(self, name, cls, per , admno):
         self.name = name
@@ -20,7 +8,6 @@ class student:
         self.per = per
         self.admno = admno
 
->>>>>>> 9a9157de152c51104ad258185825705f185d49d5
 class Collection:
     def __init__(self,dirpath):
         self.dirpath = dirpath
@@ -63,8 +50,9 @@ class Collection:
             dump(self.data,f1)
     def edit(self, admno):
         if admno in [k.admno for k in self.data]:
-            
-        else
+            k.name,k.cls,k.per = input("Enter Name: "), 
+        else:
+            pass
 
 
                 
@@ -73,14 +61,10 @@ class Collection:
 
 students = Collection('p48.txt')
 
-<<<<<<< HEAD
-students.add('lol')
-=======
 
 
 
 
 students.add(student("Ujjwal",12,99.999,1))
->>>>>>> 9a9157de152c51104ad258185825705f185d49d5
 print(students.data)
 students.remove(rno=1)
