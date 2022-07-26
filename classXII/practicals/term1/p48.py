@@ -5,7 +5,11 @@ from pickle import *
 #     def assignrno(self,cls, sec, col):
 
 
+<<<<<<< HEAD
 #     def __init__(self,):
+=======
+    def __init__(self):
+>>>>>>> 166080a2bc6a89198e6ce26a1dbb69de0e91f650
         
 class Collection:
     def __init__(self,dirpath):
@@ -34,7 +38,7 @@ class Collection:
         with open(self.dirpath,'wb') as f1:
             dump(self.data,f1)
         self.filerefresh()
-
+    def remove(self,name)
 
 students = Collection('p48.txt')
 
