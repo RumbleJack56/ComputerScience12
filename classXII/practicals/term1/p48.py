@@ -50,9 +50,12 @@ class Collection:
             dump(self.data,f1)
     def edit(self, admno):
         if admno in [k.admno for k in self.data]:
-            k.name,k.cls,k.per = input("Enter Name: "), 
+            k.name,k.cls,k.per = input("Enter Name: "), input("Enter Class: "),input("Enter Percentage: ")
+            return True
         else:
-            pass
+            return False
+    
+
 
 
                 
