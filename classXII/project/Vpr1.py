@@ -1,5 +1,6 @@
 import os
 import csv
+
 def newrecord():
     print("Add a New Customer Record")
     print("================")
@@ -110,7 +111,7 @@ def listrecords():
         
     
     f.close()
-    input("Press any key to continue..")
+    input("Press any key to continue.")
 
 def mainmenu():
     choice=0
@@ -124,7 +125,7 @@ def mainmenu():
         print("4. Search a Record")
         print("5. List all Records")
         print("6. Exit")
-        choice=int(input('Enter your choice'))
+        choice=int(input('Enter your choice: '))
         if choice==1:
             newrecord()
         elif choice==2:
