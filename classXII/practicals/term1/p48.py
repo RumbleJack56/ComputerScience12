@@ -42,7 +42,7 @@ class Collection:
             return False
         elif name == "":
             for k in self.data:
-                if k.amdno == admno:
+                if k.admno == admno:
                     self.data.remove(k)
         else:
             for k in self.data:
@@ -50,9 +50,13 @@ class Collection:
                     self.data.remove(k)
         with open(self.dirpath,'wb') as f1:
             dump(self.data,f1)
-    def edit(self, admno):
-        if admno in [k.admno for k in self.data]:
+
+
+    def edit(self, Gadmno):
+        if Gadmno in [k.admno for k in self.data]:
+            k = [stu for stu in self.data if stu.admno == Gadmno][0]
             k.name,k.cls,k.per = input("Enter Name: "), input("Enter Class: "),input("Enter Percentage: ")
+            self.filerefresh()
             return True
         else:
             return False
@@ -71,5 +75,7 @@ students = Collection('p48.txt')
 
 
 students.add(student("Ujjwal",12,99.999,1))
-print(students.data)
-students.remove(rno=1)
+students.edit(1)
+
+
+students.remove(admno=1)
