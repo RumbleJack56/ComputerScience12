@@ -59,15 +59,7 @@ class Collection:
     
 
 
-
-                
-
-
-
 students = Collection('p48.txt')
-
-
-
 
 
 students.add(student("Ujjwal",12,99.999,1))
