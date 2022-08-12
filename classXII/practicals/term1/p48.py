@@ -11,7 +11,7 @@ class student:
         self.admno = admno
 
 class Collection:
-    def __init__(self,dirpath):
+    def __init__(self,dirpath): 
         self.dirpath = dirpath
 
 
