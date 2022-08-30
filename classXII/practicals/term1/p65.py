@@ -14,6 +14,4 @@ mq.execute("SHOW DATABASES")
 print(mq.fetchall())
 
 
-
-
-
+the quick beown fox jumps over a
