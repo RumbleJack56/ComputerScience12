@@ -13,3 +13,7 @@ if ("vartika",) not in val:
 mq.execute("SHOW DATABASES")
 print(mq.fetchall())
 
+
+
+
+
