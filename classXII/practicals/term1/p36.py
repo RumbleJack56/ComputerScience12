@@ -9,6 +9,7 @@ s=' '
 
 while s:
     s=myf1.readline()
+    print(s)
     myf2.write(s)
 
 myf1.close()

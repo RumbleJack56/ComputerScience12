@@ -11,6 +11,7 @@ while str:
     w = str.split("~")
     if w[0] == "A":
         f2.write(str+"\n")
+        print(str)
 
 f1.close()
 f2.close()

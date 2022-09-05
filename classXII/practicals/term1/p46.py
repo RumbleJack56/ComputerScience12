@@ -3,7 +3,7 @@
 
 import sd 
 
-f1 = open("p45.txt", 'w')
+f1 = open("p46.txt", 'w')
 
 s=f1.readline()
 

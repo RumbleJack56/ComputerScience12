@@ -66,8 +66,12 @@ class Collection:
 students = Collection('p48.txt')
 
 
-students.add(student("Ujjwal",12,99.999,1))
-students.edit(1)
+students.add(student("Vartika",12,99.999,1))
+print("Added Student")
+print([a.name for a in students.data])
 
+students.edit(1)
+print("Edited Rn.1")
 
 students.remove(admno=1)
+print("Removed Rn.1")

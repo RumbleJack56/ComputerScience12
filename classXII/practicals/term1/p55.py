@@ -9,7 +9,7 @@ def emp(S):
         return False
 
 
-def Push(S,a):
+def push(S,a):
     S.append(a)
     top=len(S)-1
 
@@ -29,7 +29,7 @@ def peek(S):
     if emp(S):
         return 'Underflow'
     else:
-        top=len(s)-1
+        top=len(S)-1
         return S[top]
 
 
@@ -40,8 +40,8 @@ def show(S):
         t=len(S)-1
         print('(Top)',end='')
         while(t>=0):
-            print((S[t]))\
-                t-=1
+            print((S[t]))
+            t-=1
         print()
 
 
@@ -57,7 +57,7 @@ while True:
     print("4) SHOW STACK")
     print("5) EXIT")
 
-    n=int(input("Enter your choice:" ))\
+    ch=int(input("Enter your choice:" ))\
     
     if ch==1:
         v=int(input("Enter item to add: "))
