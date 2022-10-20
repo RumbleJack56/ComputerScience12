@@ -2,7 +2,3 @@ v
 u
 o
 p
-v
-u
-o
-p

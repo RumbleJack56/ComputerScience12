@@ -20,7 +20,7 @@ myfile1.close()
 
 #method 3 to read
 myfile1 = open("p29.txt", "r")
-a = [line[:-1] for line in myfile1]
+a = [line.strip("\n") for line in myfile1]
 print(a)
 myfile1.close()
 

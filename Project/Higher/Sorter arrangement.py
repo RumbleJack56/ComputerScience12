@@ -1,4 +1,4 @@
-def sorter(variable_type_list=[]):
+def sorter(variable_list=[]):
     lis = variable_list
     lisLen=len(lis)
     for a in range(0,lisLen):
@@ -9,3 +9,7 @@ def sorter(variable_type_list=[]):
 
 toArrange = [123,4353,232,434,9948,18,1,43,56,234]
 sorter(toArrange)
+
+
+
+

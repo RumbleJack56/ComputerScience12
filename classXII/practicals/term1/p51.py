@@ -5,6 +5,7 @@ import sd , csv
 with open("p51.csv",'r') as f1:
     dat = csv.reader(f1)
     dat = [line for line in dat]
+    
     maxl = max([len(line) for line in dat])
     for line in dat:
         while len(line)!=maxl:
