@@ -99,7 +99,7 @@ def runwindow3(db):
         if event in (sg.WINDOW_CLOSED,"Exit"): break
         if event in tablelist:
             window.close()
-            runwindow4(event)
+            runwindow4(dbname,event)
         if event == "Refresh":
             window.close()
             runwindow3(dbname)
@@ -117,13 +117,12 @@ def runwindow3(db):
     window.close()
 
 
-def runwindow4(table):
+def runwindow4(db,table):
     sg.theme("Light Blue 3")
-
     layout3 =[[sg.Text("MySQL Status: Connected"),sg.Button("Refresh"),sg.Text(" "*65),sg.Button("Back")],
             [sg.Text("Table: "),sg.Text(table)],
             [sg.Text("Table Entry: "), sg.Button("Enter Here"),sg.Text(" "*8),sg.Text("Delete Entry: "), sg.Button("Delete Here")],
-            [sg.Text("Find Entry: "), sg.Button("Find Here"),sg.Text(" "*8),sg.Text("Full List: "), sg.Button("Click Here")],
+            [sg.Text("Full List: "), sg.Button("Click Here")],
             [sg.Text(" ")],
             [sg.Text("_"*50)],
             [sg.Exit()]]
@@ -137,20 +136,17 @@ def runwindow4(table):
             window.close()
             runwindow4(table)
         if event == "Enter Here":
-            entertablewindow()
+            entertablewindow(table)
             
         if event == "Delete Here":
-            deletetablewindow(tablelist)
-        
-        if event == "Find Here":
-            findtablewindow()
+            deletetablewindow(db,table)
             
         if event == "Click Here":
-            listtablewindow()
+            listtablewindow(db,table)
 
         if event == "Back":
             window.close()
-            runwindow2()
+            runwindow3(db)
     window.close()
 
 def runcreatedbwindow():
@@ -215,7 +211,53 @@ def runremovetablewindow(tablelist):
             removetable(conn,event)
             window.close()
 
-def entertablewindow()
+def entertablewindow(table):
+    sg.theme("Light Blue 3")
+    entries=[[sg.Text(item+":"),sg.Input(key=item,font=("Calibri",14))] for item in tablecols(conn,table)]
+    layout1 =[[sg.Text("MySQL Status: Connected")],
+            [sg.Text("Enter into table: '"+table+"'     (use double quotes for string)")]]+entries+[[sg.Button("Input"),sg.Exit()],]
+    window = sg.Window("SQL Project",layout1,size=(720,480),font=("Eras Bold ITC",20),resizable=True,icon=icon)
+    while True:
+        event , values = window.Read()
+        print(event,values)
+        if event in (sg.WINDOW_CLOSED,"Exit"): break
+        if event == "Input":
+            inserttable(conn,table,[values[k] for k in values])
+            window.close()
+    window.close()
 
+def listtablewindow(db, table):
+    sg.theme("Light Blue 3")
+    data = tableformatting(conn,selectfromtable(conn,table),table).split("\n")
+    formattedtable = [[sg.Text(x,font=("Cascadia Code",14))] for x in data] 
+    layout1 =[[sg.Text("MySQL Status: Connected")],
+            [sg.Text("Viewing table: '"+table+"'")],[sg.Text(" ")]]+formattedtable+[[sg.Exit()]]
+    window = sg.Window("SQL Project",layout1,size=(1280,720),font=("Eras Bold ITC",20),resizable=True,icon=icon)
+    while True:
+        event , values = window.Read()
+        print(event,values)
+        if event in (sg.WINDOW_CLOSED,"Exit"): break
+    window.close()
+
+def deletetablewindow(db, table):
+    sg.theme("Light Blue 3")
+    data = tableformatting(conn,selectfromtable(conn,table),table).split("\n")
+    formattedtable = [[sg.Text(x,font=("Cascadia Code",14))] for x in data[0:3]]+[
+        [sg.Text(x,font=("Cascadia Code",14)),sg.Button("Remove",key=x)] for x in data[3:-2]
+        ]+[[sg.Text(x,font=("Cascadia Code",14))] for x in data[-2:-1]] 
+    layout1 =[[sg.Text("MySQL Status: Connected")],
+            [sg.Text("Viewing table: '"+table+"'")],[sg.Text(" ")]]+formattedtable+[[sg.Exit()]]
+    window = sg.Window("SQL Project",layout1,size=(1280,720),font=("Eras Bold ITC",20),resizable=True,icon=icon)
+    while True:
+        event , values = window.Read()
+        print(event,values)
+        if event in (sg.WINDOW_CLOSED,"Exit"): break
+        if event in data:
+            actualEntry=[x.rstrip() for x in event.split("|")][1:-1]
+            deleteintable(conn,table,actualEntry)
+            window.close()
+
+    window.close()
 
 runwindow1()
+
