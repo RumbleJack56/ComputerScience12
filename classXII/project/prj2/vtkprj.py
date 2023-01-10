@@ -3,6 +3,7 @@ import platform
 import mysql.connector
 
 mydb = mysql.connector.connect(host='localhost',user='root',password='',database='School')
+
 mycursor=mydb.cursor()
 
 def SIn():
@@ -120,16 +121,3 @@ def MenuSet(): #Function For The Student Management System
             print("Enter an appropriate choice.")       
         
 MenuSet()
-
-
-def again():
-    a = input("\nWant to choose an options again? Y/N: ")
-    while(a.lower() == 'y'):
-        if(platform.system() == "Windows"):
-            print(os.system('cls'))
-        else:
-            print(os.system('clear'))
-        MenuSet()
-        a = input("\nWant to choose an options again? Y/N: ")
-        
-again()

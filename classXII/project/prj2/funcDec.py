@@ -51,7 +51,7 @@ def inserttable(conn,table,data):
     try:
         query= "INSERT INTO "+table+" VALUES("+",".join(data)+")"
         c.execute(query)
-    except: sg.popup("Data not added",size=(120,90),modal=True,auto_close=True,auto_close_duration=3)
+    except: sg.popup("Data not added",modal=True,auto_close=True,auto_close_duration=3)
 
     conn.commit()
 

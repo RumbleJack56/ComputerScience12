@@ -84,6 +84,7 @@ def runwindow3(db):
     tablebuttons = [[sg.Button(x,size=(20,2),font=("Calibri",14))] for x in tablelist]
 
     layout3 =[[sg.Text("MySQL Status: Connected"),sg.Button("Refresh"),sg.Text(" "*65),sg.Button("Back")],
+            [sg.Text("Database Selected: "+dbname)],
             [sg.Text("Table Selections")],
             [sg.Text("Create Table: "), sg.Button("New Table"),sg.Text(" "*8),sg.Text("Delete Table: "), sg.Button("Remove")],
             [sg.Text(" ")],
@@ -106,7 +107,7 @@ def runwindow3(db):
         if event == "New Table":
             runcreatetablewindow()
             window.close()
-            runwindow3()
+            runwindow3(dbname)
         if event == "Remove":
             runremovetablewindow(tablelist)
             window.close()
